@@ -7,10 +7,11 @@ A shared home for GPL synthesis engines that can be selected in a
 
 **Status:** repository preparation and integration design. No engine is implemented
 here yet, and current Felucca builds do not consume this collection. WAVE from
-DUELL is the first planned port, tracked by
-[Felucca #354](https://github.com/kmplngj/Felucca/issues/354).
-The intended GitHub repository name is `kmplngj/Felucca-Engines-GPL`; remote
-creation and the first firmware dependency pin are pending.
+DUELL is the first planned port: [engine implementation #1](https://github.com/kmplngj/Felucca-Engines-GPL/issues/1),
+with [Felucca #354](https://github.com/kmplngj/Felucca/issues/354) owning host integration.
+The repository is [kmplngj/Felucca-Engines-GPL](https://github.com/kmplngj/Felucca-Engines-GPL).
+The first firmware dependency pin and combined-profile integration remain pending
+under [Felucca #360](https://github.com/kmplngj/Felucca/issues/360).
 
 ## One firmware, several source collections
 

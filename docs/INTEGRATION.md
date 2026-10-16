@@ -82,6 +82,10 @@ LCD/restore scratch. Preserve fades, tails and private RNG/phase ordering.
 - Complete source/notice inventories and offline archive/package reproduction pass
   before a mixed release. Hardware checks remain explicit until performed.
 
+Collection/resolver integration: https://github.com/kmplngj/Felucca/issues/360
+
+WAVE engine implementation: https://github.com/kmplngj/Felucca-Engines-GPL/issues/1
+
 Firmware coordination: https://github.com/kmplngj/Felucca/issues/28
 
 WAVE integration: https://github.com/kmplngj/Felucca/issues/354
