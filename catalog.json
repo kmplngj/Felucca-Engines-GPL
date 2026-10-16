@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "collection": "felucca-engines-gpl",
+  "license": "GPL-3.0-only",
+  "status": "design-only",
+  "engines": []
+}
