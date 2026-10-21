@@ -46,6 +46,21 @@ fetch a floating branch or modify a checked-out dependency.
 `catalog.json` intentionally has no engines. It records collection identity only;
 it does not register a stable firmware ID, enable WAVE or claim a usable module.
 
+## MACRO in Felucca
+
+[MACRO/Braids](https://github.com/kmplngj/Felucca/pull/503) is implemented in the
+firmware as an opt-in `macro` hardware-test profile with 48 models and 51 factory presets.
+It remains firmware-native and is excluded from the standard profile. WAVE/FOLD/FBFM
+retain eight-voice operation; the added models use one voice per part. Physical
+acceptance is tracked in [Felucca #27](https://github.com/kmplngj/Felucca/issues/27).
+
+[MACRO extraction #25](https://github.com/kmplngj/Felucca-Engines-GPL/issues/25) tracks
+the separate work to provide a portable implementation here. The existing wrapper,
+generators and firmware tests are GPL-3.0-only; Braids/stmlib, adapted DSP and resource
+inputs retain their MIT notices. No MACRO source or firmware dependency pin is
+provided by this collection yet. The present firmware integration does not require
+that future extraction or change the collection's empty catalog.
+
 ## License
 
 New contributions use **GPL-3.0-only**; see [LICENSE](LICENSE). Retain upstream
