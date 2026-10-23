@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "content_id": "fm-lab-original-20",
+  "license": "GPL-3.0-only",
+  "copyright": "Copyright (C) 2026 Sven Trogus (original voices and upstream generator)",
+  "source_repository": "https://github.com/jsmith13/fm_lab",
+  "source_commit": "cf35dc26709ede9c974654dfc2135f8c25a00082",
+  "source_paths": [
+    "tools/gen_voices.py",
+    "firmware/src/dx7_voices.h",
+    "LICENSING.md"
+  ],
+  "collection_repository": "https://github.com/kmplngj/Felucca-Engines-GPL",
+  "collection_pin_policy": "Consumer must pin the reviewed collection commit; no floating branch.",
+  "operator_order": "OP6..OP1",
+  "source_record_bytes": 156,
+  "discarded_byte": {
+    "offset": 155,
+    "required": 0
+  },
+  "voice_count": 20,
+  "raw_bytes": {
+    "source_records": 3120,
+    "vced": 3100,
+    "vmem": 2560
+  },
+  "inputs": {
+    "content/fm-lab/voices.json": "7c706c454f3df67ae2c1cfc4082a1b9a4e8e5cb88ff8688ee68ed30f9d0b40cf",
+    "content/fm-lab/upstream/gen_voices.py": "275635a493fcc72cb58f797d049a2ea1839e190c44e12c30bfdb83745311b12d",
+    "content/fm-lab/upstream/dx7_voices.h": "93e13fd62eb7cfbcc4ec5ebe63dde9b0b064e9ff1286983243e9317585fc626f",
+    "content/fm-lab/upstream/LICENSING.md": "4d15c92fb7e1a08ea6ed48e9ed6504203587e54b1d248ba407f9a80a9a5a9b9f",
+    "tools/fm_lab_bank.py": "c3ad26a2ba3d4283dbc1e6e3fd1add28d31696ac4dc28bd5f2c7f573d4b0d516",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  "voices": [
+    {
+      "id": "fm-lab.epiano-1",
+      "name": "EPIANO 1",
+      "vced_sha256": "bcb7aa9d9096d064584051f6d19d3479c6bcab93bfd695c68e9bee4cebc48986",
+      "vmem_sha256": "853bf471bf1ccfbd76dddc65627fdf3dad2c18a13fa9701a3f087340b5f3b619"
+    },
+    {
+      "id": "fm-lab.epiano-2",
+      "name": "EPIANO 2",
+      "vced_sha256": "77144779cc3a1761c4f52c17e19e42451a3bb663672cc7db7416d9f86c5facc4",
+      "vmem_sha256": "ab30dbdff1e776adebf2f3584fa0b7d5dc6b6965feaf4e57a24aeb05c8e06c36"
+    },
+    {
+      "id": "fm-lab.fm-bass",
+      "name": "FM BASS",
+      "vced_sha256": "84cc9a9effd7c3ff1818cc2e5e4b617941976156f8153d54aef2adbc5fa39f10",
+      "vmem_sha256": "e265811aafd19846239ae4730e3ea9822de1d2b1ff11447b81d18ac80d2130e6"
+    },
+    {
+      "id": "fm-lab.slap-bass",
+      "name": "SLAP BASS",
+      "vced_sha256": "2df6606e68d56767b612579c786bccb099502fca775ce0dfcbd0740556521dc5",
+      "vmem_sha256": "4ed8aaee158f2ed15deadc0c3a2614072b0f2dd11fc65e7b49d1923381be159b"
+    },
+    {
+      "id": "fm-lab.sub-bass",
+      "name": "SUB BASS",
+      "vced_sha256": "2475d373b58a9b058424cde60fddae9e0530d65d1c025062093b2911f294ca43",
+      "vmem_sha256": "e8ec72dc60f70bbe0d30d3c0158f8bfb5209fc4680489cbd47f54a7f42f513d0"
+    },
+    {
+      "id": "fm-lab.brass",
+      "name": "BRASS",
+      "vced_sha256": "d19956adc857d3aea0592a31ad442ec85ae0c5cf021fc7379f94b51613f9042d",
+      "vmem_sha256": "2031df207de3804c49421b06d05e7e58bb336638cdfc637a5cc9909beb7db24f"
+    },
+    {
+      "id": "fm-lab.strings",
+      "name": "STRINGS",
+      "vced_sha256": "c94e6df36808ae8d1e6ab76dbb043fce3a89a3e817b7840f924fce5cd3226945",
+      "vmem_sha256": "7488823b6f613b20ba69a17aa87b582f2bb8ec0bb89b41e67c77f4bfa2bb3143"
+    },
+    {
+      "id": "fm-lab.glass-pad",
+      "name": "GLASS PAD",
+      "vced_sha256": "d8a2b00708663190e2ed994cf9b308053da7015ca9335e3e09a3a0d44ccb968c",
+      "vmem_sha256": "4a26701c5008acc2b0902a3336760dbfc41a1f3cfec510787fb866a93d841bc7"
+    },
+    {
+      "id": "fm-lab.bells",
+      "name": "BELLS",
+      "vced_sha256": "ade2cb0f1a7030627cabfce1f83675201079e1e792313ed1715e15c9ac49e8c4",
+      "vmem_sha256": "42855bbb43bf9c162f9e54e496cec2aa08875eb8f5b8d62e8244c3298de696dd"
+    },
+    {
+      "id": "fm-lab.marimba",
+      "name": "MARIMBA",
+      "vced_sha256": "6c53519046b1cf1fc73e8ee6390b71d05d46033d9757d0b80c05537865573976",
+      "vmem_sha256": "b186c341b6b0b356aaa2861f9e2ee4116fb034b529f3aba2e3da1a3d18af5ae7"
+    },
+    {
+      "id": "fm-lab.organ",
+      "name": "ORGAN",
+      "vced_sha256": "c47e7aa6a904e90b104cfa4a83c8e4792ec2d79d2ce79ddca927948fbde4055f",
+      "vmem_sha256": "10506be164ddb785e911b0dcbc0c445ac92bd6906f339bec5ed369c21baf8e31"
+    },
+    {
+      "id": "fm-lab.clav",
+      "name": "CLAV",
+      "vced_sha256": "818a4e7d8921c99c0ad022e65c3f851e5e6816fbd6bf45a0dd3feab8a3fc42d4",
+      "vmem_sha256": "25deefa4bc1a6d76bb1459ca96a5a69b4cd9a37fa9d2c122263ea389c87122a7"
+    },
+    {
+      "id": "fm-lab.pluck",
+      "name": "PLUCK",
+      "vced_sha256": "c8d3b6c54d698e840e473873c25a05bd1f15d39bb3ddcfcecf8f90731ee7886d",
+      "vmem_sha256": "4afdb1706e9a5c40b974f64e2893d7be71b951d9f3166739527bb0a22314223a"
+    },
+    {
+      "id": "fm-lab.flute",
+      "name": "FLUTE",
+      "vced_sha256": "bb17a1caecd3bbadb1a0fd88d69afb039d40fd17cf19f650fcf1d61cfec66203",
+      "vmem_sha256": "3336c3e3568c9377cd9149c6832c42c055c505437a43795c3b445e789d10bf12"
+    },
+    {
+      "id": "fm-lab.saw-lead",
+      "name": "SAW LEAD",
+      "vced_sha256": "bb567a6a7dadb24b2e73bffdbd6de5ffd7991d337028eefc815e81f7d155075d",
+      "vmem_sha256": "84cbd18bdd07928c125d7bc09d4a833e844660e7721f27bb2ae3c939cb24c262"
+    },
+    {
+      "id": "fm-lab.koto",
+      "name": "KOTO",
+      "vced_sha256": "26e186ab59952e4df62dc86fcebc7b19bcd60e36b05bab5c1e3abfab8e8aebdc",
+      "vmem_sha256": "aedd6074dc34c2d209c59950514bc732574906910df797519075bbe9863dc6be"
+    },
+    {
+      "id": "fm-lab.deep-sub",
+      "name": "DEEP SUB",
+      "vced_sha256": "d3289970067995c04f35efd2a287bd4b1bd98a30658be214e35d4d4596891218",
+      "vmem_sha256": "0d197105be7889a73c0aef642ba6bda69f26c5e9b236987a15950f729cfebd93"
+    },
+    {
+      "id": "fm-lab.808-sub",
+      "name": "808 SUB",
+      "vced_sha256": "cccd67bda711a7218a10d24ca3a29e3d7b5ee44a8fd8ee0e80c5a2391ff2f8b5",
+      "vmem_sha256": "009bd274feeaf236556d6e4ffc0088a33aa61fd5f0a2be19ec26d0c3e73d8e36"
+    },
+    {
+      "id": "fm-lab.reese",
+      "name": "REESE",
+      "vced_sha256": "536289d2c51f78b04e13c6d7aa5c6ba5aee1e368837485afdf4b4980b9c00a03",
+      "vmem_sha256": "71a20b7d109e283e177ae1b6d8e8bfa7b8a0244cc2500a856333fa9067ec1cf8"
+    },
+    {
+      "id": "fm-lab.init-voice",
+      "name": "INIT VOICE",
+      "vced_sha256": "3807622153cb18ad08f9ccec70e174e3381c461f6984947fa51c9cf64481a8b9",
+      "vmem_sha256": "47837f24abfe9d4ee90464990270151c449334bf5ceb0b4dbd379f65fe10f039"
+    }
+  ],
+  "artifacts": {
+    "audition/fm-lab.808-sub.syx": {
+      "bytes": 163,
+      "sha256": "e20693b5a62ae4e436817e75f504c7c230ff4179fe95a74567c797b85b79577e"
+    },
+    "audition/fm-lab.bells.syx": {
+      "bytes": 163,
+      "sha256": "09fbc37d67fc18f64903ef6d5a7856dc74a4496387efdaf5110befc1919e9db0"
+    },
+    "audition/fm-lab.brass.syx": {
+      "bytes": 163,
+      "sha256": "792386d70c70794ed719394153562837d849d38013c2c9bcb4fdbe0f98396a80"
+    },
+    "audition/fm-lab.clav.syx": {
+      "bytes": 163,
+      "sha256": "167eb9083747d6abc783b75025e0b80dee45babb165c3eda892a8f2fef9ab445"
+    },
+    "audition/fm-lab.deep-sub.syx": {
+      "bytes": 163,
+      "sha256": "c73fe8e33d4c1143308309be4482738700edfdbfaa963a18db2ef4c045a936b7"
+    },
+    "audition/fm-lab.epiano-1.syx": {
+      "bytes": 163,
+      "sha256": "2e90c1803c435a1816aa1b4bfe6cf58d2707319bcb263e7a6e10c43e00f4a097"
+    },
+    "audition/fm-lab.epiano-2.syx": {
+      "bytes": 163,
+      "sha256": "7283ebb5a355732540371f88736f7561c22bf6d6368e57dc63189b96765cfab9"
+    },
+    "audition/fm-lab.flute.syx": {
+      "bytes": 163,
+      "sha256": "6a1d6a8d43211efcc21a9d43bf8eefa7e8a6d752129d0579925f386a66d7b1fc"
+    },
+    "audition/fm-lab.fm-bass.syx": {
+      "bytes": 163,
+      "sha256": "e8e259da9912a6915eaec1e176eb8fb28ee91f8e59e8becf4ac9be037a9de379"
+    },
+    "audition/fm-lab.glass-pad.syx": {
+      "bytes": 163,
+      "sha256": "81b2635b42a439df2e649904f1f89fddb439b692e5d9982d528d4c4f7f46ffe9"
+    },
+    "audition/fm-lab.init-voice.syx": {
+      "bytes": 163,
+      "sha256": "d38b3a52e105ad70d37b1344d1f70c7676f17bac4a85b5a58d3cffc9b49adc10"
+    },
+    "audition/fm-lab.koto.syx": {
+      "bytes": 163,
+      "sha256": "97e1558b4ae905d67f49d61b1e9ee62f4e914410f0107c99fb68cc8c394fdd52"
+    },
+    "audition/fm-lab.marimba.syx": {
+      "bytes": 163,
+      "sha256": "6b50aa754cf8a5b86134dc9da643e939c826dd65046cb3b51259d10d3fbfc2c4"
+    },
+    "audition/fm-lab.organ.syx": {
+      "bytes": 163,
+      "sha256": "f1b394bb99e50991aff136527052c5d029f5cd7ba456e934e8bbfa933c8bb747"
+    },
+    "audition/fm-lab.pluck.syx": {
+      "bytes": 163,
+      "sha256": "085c53fee259777ab42241d4be5296f42bb955a5eb2f793caf04f6c14159bc66"
+    },
+    "audition/fm-lab.reese.syx": {
+      "bytes": 163,
+      "sha256": "3a602d680fc9f9f5e9dd1519d9757aa856470d9e7e93c7fe4339f33ef342e7f2"
+    },
+    "audition/fm-lab.saw-lead.syx": {
+      "bytes": 163,
+      "sha256": "a995b621641f1f3e12757f52f9452433c9f7962974f164bf88903efff893d214"
+    },
+    "audition/fm-lab.slap-bass.syx": {
+      "bytes": 163,
+      "sha256": "a1882e5e05c97c7637acedcc2cddb02e8ff204ca0016b1a07746a38a4d35fe50"
+    },
+    "audition/fm-lab.strings.syx": {
+      "bytes": 163,
+      "sha256": "2cb3089c424190f043096ce292128e4b668bdf6c3c01f746b3ae2e7021bd503e"
+    },
+    "audition/fm-lab.sub-bass.syx": {
+      "bytes": 163,
+      "sha256": "14a2f9b5d879dc203bdca66984c5bbf5ddd1729ad95f63f2b21b16a57a7ac7bb"
+    },
+    "audition/notes.mid": {
+      "bytes": 101,
+      "sha256": "76a7a480d429941c8e48d074f39e1579adbc919b31b57cd7eebe9b6489c2237e"
+    },
+    "voices.vced": {
+      "bytes": 3100,
+      "sha256": "3baf7067804420275c72e681c4db929a2672c64b3f81aa56fecb02ddf28694b6"
+    },
+    "voices.vmem": {
+      "bytes": 2560,
+      "sha256": "5d8107f1ccfc4d64c7c83de0752ed9b778e8eae095fff6cf885d0b2f8721f3bd"
+    }
+  },
+  "scope": "Offline optional classic content only; no renderer, host IDs, slots, defaults or PCM parity."
+}

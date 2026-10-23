@@ -5,8 +5,10 @@ A shared home for GPL synthesis engines that can be selected in a
 [Felucca](https://github.com/kmplngj/Felucca) firmware build alongside the MIT
 [Felucca-Engines](https://github.com/kmplngj/Felucca-Engines) collection.
 
-**Status:** repository preparation and integration design. No engine is implemented
-here yet, and current Felucca builds do not consume this collection. WAVE from
+**Status:** optional content tooling and engine integration design. The original
+[FM Lab 20-voice bank](content/fm-lab/README.md) is available for offline classic-DX7
+export and audition preparation. No engine is implemented here yet, and current
+Felucca builds do not consume this collection. WAVE from
 DUELL is the first planned port: [engine implementation #1](https://github.com/kmplngj/Felucca-Engines-GPL/issues/1),
 with [Felucca #354](https://github.com/kmplngj/Felucca/issues/354) owning host integration.
 The repository is [kmplngj/Felucca-Engines-GPL](https://github.com/kmplngj/Felucca-Engines-GPL).
@@ -44,7 +46,27 @@ fetch a floating branch or modify a checked-out dependency.
 - [DUELL adoption plan](https://github.com/kmplngj/Felucca/issues/359).
 
 `catalog.json` intentionally has no engines. It records collection identity only;
-it does not register a stable firmware ID, enable WAVE or claim a usable module.
+optional content has a separate [manifest](content/fm-lab/manifest.json).
+Neither registers a stable firmware ID, enables WAVE or provides a renderer.
+
+## Optional original FM Lab voices
+
+The GPL-3.0-only bank preserves all 20 Sven Trogus voices from the pinned FM Lab
+source, with readable offline inputs and original notices. Python 3.10+ and its
+standard library are sufficient; no SDK, network or synthesizer is needed:
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 tools/fm_lab_bank.py --check --out build/fm-lab
+```
+
+The exporter writes 3,100 bytes of classic VCED, 2,560 bytes of VMEM and separate
+single-voice SysEx/note-MIDI audition fixtures. It sends no MIDI. CI runs these
+same source-preservation, format, malformed-input and reproducibility checks.
+No donor/native PCM parity or firmware resource claim is made. Optional native
+audition/selection remains [Felucca #516](https://github.com/kmplngj/Felucca/issues/516),
+and collection consumption remains gated by #360. Standard sounds and slots stay
+with their firmware owner.
 
 ## MACRO in Felucca
 
