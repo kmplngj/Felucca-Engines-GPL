@@ -24,6 +24,8 @@ engines stay in their current home until an explicit, tested extraction is agree
    registry/profile integration and host qualification. Adding a file here must
    never silently add an instrument to the standard firmware.
 
-Until a first engine lands there is no standalone build/test command. Document
-the actual supported harness with that implementation rather than adding a
+The optional FM Lab content harness runs with `python3 -m unittest discover -s tests -v`
+and `python3 tools/fm_lab_bank.py --check`. It validates offline voice serialization,
+not engine DSP or device behavior. There is no standalone engine build yet; document
+the actual supported harness with the first implementation rather than adding a
 success-only placeholder or presenting the design catalog as a working module.

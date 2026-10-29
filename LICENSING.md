@@ -17,6 +17,23 @@ required license texts and notices in both this repository and complete firmware
 source/release distributions when that engine is used. Do not import unknown or
 incompatible material, or donor trademarks/logo artwork as engine assets.
 
+## Imported FM Lab original voice content
+
+`content/fm-lab/upstream/` retains the exact generator, generated voice header and
+licensing statement from `jsmith13/fm_lab` at
+`cf35dc26709ede9c974654dfc2135f8c25a00082`. Copyright (C) 2026 Sven Trogus;
+the 20 voices and generator are GPL-3.0-only, designed from scratch for sloopDX.
+The upstream statements explicitly exclude Yamaha/M-VAVE banks. The full GPL text
+in this repository's LICENSE is byte-identical to the pinned donor LICENSE.
+
+The generator's synth records are embedded recipes using only Python's `math` and
+`sys`; they have no sample/bank/file inputs. The retained header is the independent
+byte reference. The [provenance inventory](content/fm-lab/README.md#provenance-and-modifications)
+records paths, hashes and conversion boundaries. `voices.json` is a structured
+transcription of those same records, not newly designed substitutes. The exporter
+and tests are GPL-3.0-only. No donor DSP, fonts, samples, vendor banks, user libraries,
+wave extensions or artwork are included.
+
 ## Planned WAVE source (not imported)
 
 - Repository: https://github.com/oscillr/DUELL

@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: GPL-3.0-only
+name: Optional content
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fm-lab-bank:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify pinned content, formats and offline reproducibility
+        run: python3 -m unittest discover -s tests -v
+      - name: Export checked audition fixtures
+        run: python3 tools/fm_lab_bank.py --check --out build/fm-lab
